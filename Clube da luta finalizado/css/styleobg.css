@@ -1,0 +1,95 @@
+/* #region global */
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset de CSS básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans';
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*colors*/
+
+:root {
+    --color-base-1: #A0C3E5;
+    --color-base-2: #8EB1D3;
+    --color-base-3: #7C9FC0;
+    --color-base-4: #6A8DAE;
+    --color-base-5: #587B9B;
+    --color-restricted: #A0C3E5;
+    --color-white: #ffffff;
+    --color-black: #000000;
+    /* Cor padrão do texto */
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    /* padroniza o tamanho das sessões */
+}
+
+/* #endregion */
+
+/* #region background */
+#pageone {
+
+    & .background {
+        & video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            z-index: -1000;
+        }
+    }
+
+    & .menu {
+        & .logo {
+            & a {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                color: transparent;
+                font-family: bevan;
+                text-align: center;
+                font-size: 1em;
+                -webkit-text-stroke: var(--color-white) 2px;
+                text-transform: uppercase;
+                z-index: 1;
+                bottom: 2%;
+            }
+        }
+    }
+
+    & .thankstext {
+        & h1 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            color: transparent;
+            font-family: bevan;
+            text-align: center;
+            font-size: 8em;
+            -webkit-text-stroke: var(--color-white) 2px;
+            text-transform: uppercase;
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.8)
+        }
+    }
+}
+
+/* #endregion */

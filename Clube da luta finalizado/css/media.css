@@ -1,0 +1,3201 @@
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+/*exxxtra small devices (phones, 320px and down)*/
+@media (min-width: 320px) and (max-width: 559px) {
+
+    /*#region global */
+    span {
+        padding: 0.4em;
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+    /*#region Header */
+    header nav {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        background-color: var(--color-base-2);
+        /* Adiciona cor de fundo para maior contraste */
+
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            & .logo img {
+                display: none;
+                /* Oculta a logo em dispositivos pequenos */
+            }
+
+            & .navbar {
+                display: none;
+                /* Oculta o navbar padrão */
+            }
+
+            .navbarmobile {
+                position: fixed;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0.5em;
+                border-radius: 35px;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                width: 100%;
+                height: 5em;
+                background-color: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(1em);
+                -webkit-backdrop-filter: blur(1em);
+                margin-top: 1em;
+            }
+
+
+            .navbarmobile ul {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                width: 100%;
+            }
+
+            .navbarmobile ul li {
+                margin: 0 1.3em;
+                font-size: 1em;
+            }
+
+            .navbarmobile a {
+                font-size: 1em;
+                color: var(--color-white);
+                text-transform: uppercase;
+                font-weight: 400;
+                text-decoration: none;
+                /* Adiciona transição para a cor e o tamanho da fonte */
+            }
+
+            #btnmode {
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 0.7em;
+                /* Ajuste para maior clareza */
+                color: var(--color-white);
+                transition: color 0.3s, font-size 0.3s;
+                /* Adiciona transição para a cor e o tamanho da fonte */
+            }
+
+        }
+    }
+
+
+    /* #endregion */
+
+    /*#region Home */
+    #home .homecontainer #title {
+        font-size: 2.5em;
+        padding: 3em 1%;
+    }
+
+    #home .homecontainer #subtitle {
+        font-size: 2em;
+        padding: 5em 1%;
+    }
+
+    /* #endregion */
+
+    /*#region About */
+    #about .aboutcontainer {
+        width: 100%;
+
+        /* right: 5%; */
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 12px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region Elenco */
+
+    /* Reduzindo o tamanho do título na seção de elenco */
+    #elenco .nomeDaSection h1 {
+        padding-top: 20%;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 300px;
+        /* Ajusta a altura da imagem */
+        width: 300px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+
+    #regras {
+        top: 50em;
+
+        & .rulescontainer {
+            width: 100%;
+            min-height: 100vh;
+            /* Define a altura mínima para ocupar toda a viewport */
+            background-color: var(--color-base-2);
+            position: relative;
+            overflow: hidden;
+
+            & h1 {
+                font-size: 1.5em;
+                margin: 0;
+                padding: 0.5em 0;
+                /* Adiciona espaço ao redor do título */
+                text-align: center;
+                /* Centraliza o título */
+            }
+
+            & .ruleslist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: auto;
+                padding: 10% 0;
+                box-sizing: border-box;
+                margin-top: .5em;
+
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 5px;
+                    width: 90%;
+                    max-width: 600px;
+                    margin: 0.5em 0;
+                    padding: 0.5em;
+                    text-align: center;
+                    font-size: 1em;
+                    box-sizing: border-box;
+                    word-wrap: break-word;
+                    border: 1px solid var(--color-base);
+                    /* Adiciona uma borda */
+
+                    & span {
+                        font-size: .5em;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*#endregion */
+
+    /* #region comentarios */
+    #gallery {
+        padding: 10px;
+        /* Adiciona espaçamento interno para a seção */
+        height: auto;
+        min-height: 100vh;
+        /* Garante que a seção ocupe pelo menos 100% da altura da viewport */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title h1 {
+            padding-top: 10%;
+            font-size: 10vw;
+            /* Tamanho da fonte em relação à largura da viewport */
+            text-align: center;
+            /* Espaçamento inferior para o título */
+        }
+    }
+
+    .filterGroup {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        padding: 0;
+        /* Remove padding padrão */
+        list-style: none;
+        /* Remove bullets da lista */
+    }
+
+    .filterGroup li {
+        flex: 1;
+        text-align: center;
+        margin: 0 0;
+        /* Margem lateral mínima para espaçar os itens */
+        padding: 0.2em;
+        cursor: pointer;
+        letter-spacing: .1em;
+        background-color: var(--color-white);
+        border-radius: 15px;
+        transition: all .5s;
+        font-size: 1em;
+        /* Ajuste de fonte para dispositivos menores */
+    }
+
+    .galleryContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Define uma única coluna */
+        gap: 5px;
+        /* Espaço entre os itens da galeria */
+        padding: .5em;
+        box-sizing: border-box;
+        justify-items: center;
+        /* Centraliza os itens dentro da grid */
+    }
+
+    .galleryInner {
+        width: 100%;
+        max-width: 320px;
+        /* Limita a largura das imagens */
+        padding: .5em;
+        box-sizing: border-box;
+        border-radius: 15px;
+        /* Ajuste do raio das bordas */
+    }
+
+    .galleryInner img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        /* Ajuste do raio das bordas */
+        border: 2px solid var(--color-white);
+        transition: all .5s;
+    }
+
+    .galleryInner img:hover {
+        filter: saturate(1);
+        border: 2px solid var(--color-black);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    /* #endregion */
+
+    /*#region citações */
+
+    #citações {
+        height: auto;
+        padding: .5em 1em;
+
+        & .nomeDaSection {
+            & h1 {
+                font-size: 1.2em;
+                /* Reduzido para se ajustar a telas menores */
+            }
+        }
+
+        & .carrossel {
+            width: 100%;
+            height: auto;
+            margin: 1em 0;
+
+            & i {
+                font-size: 0.5em;
+            }
+
+            & p.citação {
+                font-size: 1em;
+            }
+
+            & .slide {
+                & .pessoa {
+                    & h2.nome-pessoa {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 35%;
+    }
+
+    & .contactcontainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        /* Reduz o espaçamento entre os elementos */
+
+        & .mapcontainer iframe {
+            height: 20em;
+            /* Reduz ainda mais a altura do mapa */
+        }
+
+        & .contactdetails {
+            height: auto;
+            padding: 1em;
+            /* Reduz o padding */
+            border-left: none;
+            /* Remove as bordas laterais */
+            border-right: none;
+
+            & li {
+                padding: 1em;
+                font-size: 1em;
+            }
+        }
+
+        & .contactform {
+            width: 100%;
+            padding: 1em;
+            /* Reduz o padding */
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        & .footerContainer {
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (min-width: 560px) and (max-width: 600px) {
+
+    /* #region global */
+    span {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+    /* #region Header */
+    header {
+        display: flex;
+
+        nav {
+            /* Exibe o menu de navegação */
+            padding: 0.5em;
+
+            .menu {
+                display: flex;
+                /* Utiliza flexbox para o layout do menu */
+                flex-direction: column;
+
+                & .logo img {
+                    height: 3em;
+                    display: none;
+                    /* Ajusta a altura do logo */
+                }
+
+                & .navbar {
+                    display: none;
+                    /* Utiliza flexbox para a navbar */
+                    flex-direction: column;
+                    width: 90vw;
+                    /* Ajusta a largura da navbar */
+                    height: auto;
+                    padding: 1em;
+
+                    & ul {
+                        display: flex;
+                        /* Utiliza flexbox para a lista de navegação */
+                        flex-direction: column;
+
+                        & li {
+                            margin: 1em 0;
+                            /* Ajusta a margem dos itens da lista */
+                        }
+                    }
+                }
+
+                & .navbarmobile {
+                    position: fixed;
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite que os ícones quebrem para a próxima linha */
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 100%;
+                    height: auto;
+                    /* Ajuste automático de altura conforme os itens ocupam mais espaço */
+                    background-color: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(1em);
+                    -webkit-backdrop-filter: blur(1em);
+
+                }
+
+                .navbarmobile ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite quebra de linha dentro da lista */
+                    align-items: center;
+                    justify-content: center;
+                    /* Centraliza os ícones dentro da linha */
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    width: 100%;
+                }
+
+                .navbarmobile ul li {
+                    margin: 0 1.3em;
+                    font-size: 1em;
+                }
+
+                .navbarmobile a {
+                    color: var(--color-white);
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region home*/
+    #home .homecontainer #title {
+        font-size: 4.5em;
+        padding: 3em 1%;
+    }
+
+    #home .homecontainer #subtitle {
+        font-size: 4em;
+        padding: 5em 1%;
+    }
+
+
+    /*#endregion*/
+
+    /*#region About */
+    #about .aboutcontainer {
+        width: 100%;
+
+        /* right: 5%; */
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region Elenco */
+    /* Reduzindo o tamanho do título na seção de elenco */
+    #elenco .nomeDaSection h1 {
+        padding-top: 20%;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 500px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+
+    /* #endregion */
+
+    /* #region regras */
+
+    #regras {
+        & .rulescontainer {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-base-2);
+            position: relative;
+            overflow: hidden;
+            /* Evita que elementos ultrapassem o contêiner */
+
+            & h1 {
+                font-size: 2em;
+            }
+
+            & .ruleslist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Centraliza a lista */
+                justify-content: center;
+                width: 100%;
+                height: calc(100vh - 7em);
+                /* Ajusta a altura para não sobrepor o título */
+                padding: 10% 0;
+                /* Adiciona espaçamento nas laterais e no topo */
+                box-sizing: border-box;
+                /* Inclui padding na largura total */
+                margin-top: 1em;
+                /* Adiciona margem superior para espaçar do título */
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 5px;
+                    width: 90%;
+                    /* Ajusta a largura dos itens da lista */
+                    max-width: 600px;
+                    /* Limita a largura máxima da lista */
+                    margin: 0.5em 0;
+                    /* Adiciona margem entre os itens */
+                    padding: 0.5em;
+                    /* Adiciona padding interno */
+                    text-align: center;
+                    font-size: 1em;
+                    /* Ajuste o tamanho da fonte conforme necessário */
+                    box-sizing: border-box;
+                    /* Inclui padding e bordas no tamanho total */
+                    word-wrap: break-word;
+                    /* Quebra palavras longas para evitar quebra do layout */
+                    border: 1px
+                }
+            }
+        }
+    }
+
+    /*#endregion */
+
+    /*#region citações */
+
+    #citações {
+        height: auto;
+        padding: .5em 1em;
+
+        & .nomeDaSection {
+            & h1 {
+                font-size: 1.2em;
+                /* Reduzido para se ajustar a telas menores */
+            }
+        }
+
+        & .carrossel {
+            width: 100%;
+            height: auto;
+            margin: 1em 0;
+
+            & i {
+                font-size: 2em;
+            }
+
+            & p.citação {
+                font-size: 1em;
+            }
+
+            & .slide {
+                & .pessoa {
+                    & h2.nome-pessoa {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 35%;
+    }
+
+    & .contactcontainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        /* Reduz o espaçamento entre os elementos */
+
+        & .mapcontainer iframe {
+            height: 20em;
+            /* Reduz ainda mais a altura do mapa */
+        }
+
+        & .contactdetails {
+            height: auto;
+            padding: 1em;
+            /* Reduz o padding */
+            border-left: none;
+            /* Remove as bordas laterais */
+            border-right: none;
+
+            & li {
+                padding: 1em;
+                font-size: 1em;
+            }
+        }
+
+        & .contactform {
+            width: 100%;
+            padding: 1em;
+            /* Reduz o padding */
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        & .footerContainer {
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) and (max-width: 768px) {
+
+    /* #region global */
+    span {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+    /* #region Header */
+    header {
+        display: flex;
+
+        nav {
+            /* Exibe o menu de navegação */
+            padding: 0.5em;
+
+            .menu {
+                display: flex;
+                /* Utiliza flexbox para o layout do menu */
+                flex-direction: column;
+
+                & .logo img {
+                    height: 3em;
+                    display: none;
+                    /* Ajusta a altura do logo */
+                }
+
+                & .navbar {
+                    display: none;
+                    /* Utiliza flexbox para a navbar */
+                    flex-direction: column;
+                    width: 90vw;
+                    /* Ajusta a largura da navbar */
+                    height: auto;
+                    padding: 1em;
+
+                    & ul {
+                        display: flex;
+                        /* Utiliza flexbox para a lista de navegação */
+                        flex-direction: column;
+
+                        & li {
+                            margin: 1em 0;
+                            /* Ajusta a margem dos itens da lista */
+                        }
+                    }
+                }
+
+                & .navbarmobile {
+                    position: fixed;
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite que os ícones quebrem para a próxima linha */
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 100%;
+                    height: auto;
+                    /* Ajuste automático de altura conforme os itens ocupam mais espaço */
+                    background-color: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(1em);
+                    -webkit-backdrop-filter: blur(1em);
+
+                }
+
+                .navbarmobile ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite quebra de linha dentro da lista */
+                    align-items: center;
+                    justify-content: center;
+                    /* Centraliza os ícones dentro da linha */
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    width: 100%;
+                }
+
+                .navbarmobile ul li {
+                    margin: 0 1.3em;
+                    font-size: 1em;
+                }
+
+                .navbarmobile a {
+                    color: var(--color-white);
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region home*/
+    #home .homecontainer #title {
+        font-size: 4.5em;
+        padding: 3em 1%;
+    }
+
+    #home .homecontainer #subtitle {
+        font-size: 4em;
+        padding: 5em 1%;
+    }
+
+    /*#endregion*/
+
+    /*#region About */
+    #about .aboutcontainer {
+        width: 100%;
+
+        /* right: 5%; */
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region elenco */
+    /* Reduzindo o tamanho do título na seção de elenco */
+    #elenco .nomeDaSection h1 {
+        padding-top: 20%;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 500px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+
+    #regras {
+        & .rulescontainer {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-base-2);
+            position: relative;
+            overflow: hidden;
+            /* Evita que elementos ultrapassem o contêiner */
+
+            & h1 {
+                font-size: 2em;
+            }
+
+            & .ruleslist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Centraliza a lista */
+                justify-content: center;
+                width: 100%;
+                height: calc(100vh - 7em);
+                /* Ajusta a altura para não sobrepor o título */
+                padding: 10% 0;
+                /* Adiciona espaçamento nas laterais e no topo */
+                box-sizing: border-box;
+                /* Inclui padding na largura total */
+                margin-top: 1em;
+                /* Adiciona margem superior para espaçar do título */
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 5px;
+                    width: 90%;
+                    /* Ajusta a largura dos itens da lista */
+                    max-width: 600px;
+                    /* Limita a largura máxima da lista */
+                    margin: 0.5em 0;
+                    /* Adiciona margem entre os itens */
+                    padding: 0.5em;
+                    /* Adiciona padding interno */
+                    text-align: center;
+                    font-size: 1em;
+                    /* Ajuste o tamanho da fonte conforme necessário */
+                    box-sizing: border-box;
+                    /* Inclui padding e bordas no tamanho total */
+                    word-wrap: break-word;
+                    /* Quebra palavras longas para evitar quebra do layout */
+                    border: 1px
+                }
+            }
+        }
+    }
+
+    /*#endregion */
+
+    /*#region citações */
+
+    #citações {
+        height: auto;
+        padding: .5em 1em;
+
+        & .nomeDaSection {
+            & h1 {
+                font-size: 1.2em;
+                /* Reduzido para se ajustar a telas menores */
+            }
+        }
+
+        & .carrossel {
+            width: 100%;
+            height: auto;
+            margin: 1em 0;
+
+            & i {
+                font-size: 2em;
+            }
+
+            & p.citação {
+                font-size: 1em;
+            }
+
+            & .slide {
+                & .pessoa {
+                    & h2.nome-pessoa {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 35%;
+    }
+
+    & .contactcontainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        /* Reduz o espaçamento entre os elementos */
+
+        & .mapcontainer iframe {
+            height: 20em;
+            /* Reduz ainda mais a altura do mapa */
+        }
+
+        & .contactdetails {
+            height: auto;
+            padding: 1em;
+            /* Reduz o padding */
+            border-left: none;
+            /* Remove as bordas laterais */
+            border-right: none;
+
+            & li {
+                padding: 1em;
+                font-size: 1em;
+            }
+        }
+
+        & .contactform {
+            width: 100%;
+            padding: 1em;
+            /* Reduz o padding */
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        & .footerContainer {
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* #region global */
+    span {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+    /* #region Header */
+    header {
+        display: flex;
+
+        nav {
+            /* Exibe o menu de navegação */
+            padding: 0.5em;
+
+            .menu {
+                display: flex;
+                /* Utiliza flexbox para o layout do menu */
+                flex-direction: column;
+
+                & .logo img {
+                    height: 3em;
+                    display: none;
+                    /* Ajusta a altura do logo */
+                }
+
+                & .navbar {
+                    display: none;
+                    /* Utiliza flexbox para a navbar */
+                    flex-direction: column;
+                    width: 90vw;
+                    /* Ajusta a largura da navbar */
+                    height: auto;
+                    padding: 1em;
+
+                    & ul {
+                        display: flex;
+                        /* Utiliza flexbox para a lista de navegação */
+                        flex-direction: column;
+
+                        & li {
+                            margin: 1em 0;
+                            /* Ajusta a margem dos itens da lista */
+                        }
+                    }
+                }
+
+                & .navbarmobile {
+                    position: fixed;
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite que os ícones quebrem para a próxima linha */
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 100%;
+                    height: auto;
+                    /* Ajuste automático de altura conforme os itens ocupam mais espaço */
+                    background-color: rgba(255, 255, 255, 0.05);
+                    backdrop-filter: blur(1em);
+                    -webkit-backdrop-filter: blur(1em);
+
+                }
+
+                .navbarmobile ul {
+                    display: flex;
+                    flex-wrap: wrap;
+                    /* Permite quebra de linha dentro da lista */
+                    align-items: center;
+                    justify-content: center;
+                    /* Centraliza os ícones dentro da linha */
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    width: 100%;
+                }
+
+                .navbarmobile ul li {
+                    margin: 0 1.3em;
+                    font-size: 1em;
+                }
+
+                .navbarmobile a {
+                    color: var(--color-white);
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region home*/
+
+    #home .homecontainer #title {
+        font-size: 4.5em;
+        padding: 3em 1%;
+    }
+
+    #home .homecontainer #subtitle {
+        font-size: 4em;
+        padding: 5em 1%;
+    }
+
+    /*#endregion*/
+
+    /*#region About */
+    #about .aboutcontainer {
+        width: 100%;
+        right: 0%;
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region Elenco */
+    #elenco .nomeDaSection h1 {
+        padding-top: 20%;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 380px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+
+    #regras {
+        & .rulescontainer {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-base-2);
+            position: relative;
+            overflow: hidden;
+            /* Evita que elementos ultrapassem o contêiner */
+
+            & h1 {
+                font-size: 2em;
+            }
+
+            & .ruleslist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Centraliza a lista */
+                justify-content: center;
+                width: 100%;
+                height: calc(100vh - 7em);
+                /* Ajusta a altura para não sobrepor o título */
+                padding: 10% 0;
+                /* Adiciona espaçamento nas laterais e no topo */
+                box-sizing: border-box;
+                /* Inclui padding na largura total */
+                margin-top: 1em;
+                /* Adiciona margem superior para espaçar do título */
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 5px;
+                    width: 90%;
+                    /* Ajusta a largura dos itens da lista */
+                    max-width: 600px;
+                    /* Limita a largura máxima da lista */
+                    margin: 0.5em 0;
+                    /* Adiciona margem entre os itens */
+                    padding: 0.5em;
+                    /* Adiciona padding interno */
+                    text-align: center;
+                    font-size: 1em;
+                    /* Ajuste o tamanho da fonte conforme necessário */
+                    box-sizing: border-box;
+                    /* Inclui padding e bordas no tamanho total */
+                    word-wrap: break-word;
+                    /* Quebra palavras longas para evitar quebra do layout */
+                    border: 1px
+                }
+            }
+        }
+    }
+
+    /*#endregion */
+
+    /*#region citações */
+
+    #citações {
+        height: auto;
+        padding: .5em 1em;
+
+        & .nomeDaSection {
+            & h1 {
+                font-size: 1.2em;
+                /* Reduzido para se ajustar a telas menores */
+            }
+        }
+
+        & .carrossel {
+            width: 100%;
+            height: auto;
+            margin: 1em 0;
+
+            & i {
+                font-size: 2em;
+            }
+
+            & p.citação {
+                font-size: 1em;
+            }
+
+            & .slide {
+                & .pessoa {
+                    & h2.nome-pessoa {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 20%;
+    }
+
+    & .contactcontainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        /* Reduz o espaçamento entre os elementos */
+
+        & .mapcontainer iframe {
+            height: 20em;
+            /* Reduz ainda mais a altura do mapa */
+        }
+
+        & .contactdetails {
+            height: auto;
+            padding: 1em;
+            /* Reduz o padding */
+            border-left: none;
+            /* Remove as bordas laterais */
+            border-right: none;
+
+            & li {
+                padding: 1em;
+                font-size: 1em;
+            }
+        }
+
+        & .contactform {
+            width: 100%;
+            padding: 1em;
+            /* Reduz o padding */
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        & .footerContainer {
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 993px) and (max-width: 1200px) {
+
+    /* #region global */
+    span {
+        font-size: 1.2em;
+    }
+
+    /* #endregion */
+
+    /* #region Header */
+    header {
+        /* display: none; */
+
+        nav {
+            /* Exibe o menu de navegação */
+            padding: 0.5em;
+
+            .menu {
+                display: flex;
+                /* Utiliza flexbox para o layout do menu */
+
+                & .logo img {
+                    height: 4em;
+                    position: fixed;
+                    /* Ajusta a altura do logo */
+                }
+
+                & .navbar {
+                    display: flex;
+                    /* Utiliza flexbox para a navbar */
+                    /* flex-direction: column; */
+                    width: 80vw;
+                    /* Ajusta a largura da navbar */
+                    height: auto;
+                    /* padding: 1em; */
+
+
+
+                    & ul {
+                        display: flex;
+
+                        /* Utiliza flexbox para a lista de navegação */
+                        /* flex-direction: column; */
+
+                        & li {
+                            margin: 1em 1em;
+                            /* Ajusta a margem dos itens da lista */
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region home*/
+    #home .homecontainer #title {
+        font-size: 4.5em;
+        padding: 3em 1%;
+    }
+
+    #home .homecontainer #subtitle {
+        font-size: 4em;
+        padding: 5em 1%;
+    }
+
+
+
+    /*#endregion*/
+
+    /*#region About */
+    #about .aboutcontainer {
+        width: 100%;
+        right: 0%;
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /*#region Elenco */
+    #elenco .nomeDaSection h1 {
+        padding-top: 5%;
+        font-size: 8em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 380px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+
+    #regras {
+        & .rulescontainer {
+            width: 100%;
+            height: 100vh;
+            background-color: var(--color-base-2);
+            position: relative;
+            overflow: hidden;
+            padding-top: 4em;
+            /* Evita que elementos ultrapassem o contêiner */
+
+            & h1 {
+                font-size: 4em;
+            }
+
+            & .ruleslist {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                /* Centraliza a lista */
+                justify-content: center;
+                width: 100%;
+                height: calc(100vh - 7em);
+                /* Ajusta a altura para não sobrepor o título */
+                padding: 10% 0;
+                /* Adiciona espaçamento nas laterais e no topo */
+                box-sizing: border-box;
+                /* Inclui padding na largura total */
+                margin-top: 1em;
+                /* Adiciona margem superior para espaçar do título */
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 5px;
+                    width: 90%;
+                    /* Ajusta a largura dos itens da lista */
+                    max-width: 600px;
+                    /* Limita a largura máxima da lista */
+                    margin: 0.5em 0;
+                    /* Adiciona margem entre os itens */
+                    padding: 0.5em;
+                    /* Adiciona padding interno */
+                    text-align: center;
+                    font-size: 1em;
+                    /* Ajuste o tamanho da fonte conforme necessário */
+                    box-sizing: border-box;
+                    /* Inclui padding e bordas no tamanho total */
+                    word-wrap: break-word;
+                    /* Quebra palavras longas para evitar quebra do layout */
+                    border: 1px
+                }
+            }
+        }
+    }
+
+    /*#endregion */
+
+    /*#region citações */
+
+    #citações {
+        height: auto;
+        padding: .5em 1em;
+
+        & .nomeDaSection {
+            & h1 {
+                font-size: 4em;
+                padding-top: 1.5em;
+                /* Reduzido para se ajustar a telas menores */
+            }
+        }
+
+        & .carrossel {
+            width: 80%;
+            height: auto;
+            margin: 1em 0;
+
+            & i {
+                font-size: 3em;
+            }
+
+            & p.citação {
+                font-size: 1.5em;
+            }
+
+            & .slide {
+                & .pessoa {
+                    & h2.nome-pessoa {
+                        font-size: 2em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 20%;
+    }
+
+    & .contactcontainer {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+        /* Reduz o espaçamento entre os elementos */
+
+        & .mapcontainer iframe {
+            height: 20em;
+            /* Reduz ainda mais a altura do mapa */
+        }
+
+        & .contactdetails {
+            height: auto;
+            padding: 1em;
+            /* Reduz o padding */
+            border-left: none;
+            /* Remove as bordas laterais */
+            border-right: none;
+
+            & li {
+                padding: 1em;
+                font-size: 1em;
+            }
+        }
+
+        & .contactform {
+            width: 100%;
+            padding: 1em;
+            /* Reduz o padding */
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        & .footerContainer {
+            & p {
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 1200px) and (max-width: 1919px) {
+    /* #region global */
+
+
+    section {
+        background-color: var(--color-base-1);
+        height: 100vh;
+        /* padroniza o tamanho das sessões */
+        border-bottom: 5px solid var(--color-restricted);
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    span {
+        color: var(--color-restricted);
+        padding: .8em;
+        transform: scale(1.2);
+        text-decoration: underline;
+        font-family: bevan;
+    }
+
+    /* #endregion */
+
+    /* #region header */
+
+    header {
+        position: relative;
+
+        & nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            /* Garante que o header esteja acima de outros elementos */
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 1em;
+
+                & .logo {
+
+                    & img {
+                        height: 5em;
+                        cursor: pointer;
+                    }
+                }
+
+                & .navbar {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 2em;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 65vw;
+                    height: 4em;
+                    justify-content: space-between;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    /* Fundo branco com opacidade para efeito de blur visível */
+                    backdrop-filter: blur(1em);
+                    /* Aplica o efeito de desfoque */
+                    -webkit-backdrop-filter: blur(1em);
+                    /* aumenta a compatibilidade do efeito em outros navegadores */
+
+
+                    & ul {
+                        display: flex;
+                        align-items: center;
+
+                        & li {
+                            margin: 0 1em;
+                            font-size: 1em;
+                        }
+                    }
+
+                    a {
+                        color: var(--color-white);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: var(--color-base-1);
+                        font-size: 1.3em;
+                        transition: all .5s;
+                    }
+
+
+                    #btnmode {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.3em;
+                        color: var(--color-white);
+                        transition: all 0.3s;
+                    }
+
+                    #btnmode:hover {
+                        color: var(--color-white);
+                        font-size: 1.5em;
+                        transition: all .5s;
+                    }
+                }
+
+                & .navbarmobile {
+                    position: fixed;
+                    display: none;
+                    align-items: center;
+                    padding: 0 2em;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 40vw;
+                    height: 4em;
+                    justify-content: space-between;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    /* Fundo branco com opacidade para efeito de blur visível */
+                    backdrop-filter: blur(1em);
+                    /* Aplica o efeito de desfoque */
+                    -webkit-backdrop-filter: blur(1em);
+                    /* aumenta a compatibilidade do efeito em outros navegadores */
+                    right: 0%;
+
+                    & ul {
+                        display: flex;
+                        align-items: center;
+
+                        & li {
+                            margin: 0 3em;
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    a {
+                        color: var(--color-white);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: var(--color-base-1);
+                        font-size: 1.3em;
+                        transition: all .5s;
+                    }
+
+
+                    #btnmode {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.3em;
+                        color: var(--color-white);
+                        transition: all 0.3s;
+                    }
+
+                    #btnmode:hover {
+                        color: var(--color-base-1);
+                        font-size: 1.5em;
+                        transition: all .5s;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    /* #endregion */
+
+    /* #region home */
+    #home {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url(../img/background_homepage_white.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background: red; */
+
+
+        & .homecontainer {
+            width: 100%;
+
+            & #title {
+                padding: 1em 2%;
+                color: var(--color-restricted);
+                font-family: bevan;
+                font-size: 10em;
+                position: absolute;
+            }
+
+            & #subtitle {
+                font-size: 5em;
+                padding: 4.5em 2%;
+                position: absolute;
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .darkMode #home {
+        background-image: url(../img/background_homepage_dark.webp);
+    }
+
+
+    /* #endregion */
+
+    /* #region about */
+    #about .aboutcontainer {
+        width: 100%;
+        right: 0%;
+
+        & img {
+            display: none;
+        }
+
+        & .aboutdetails {
+            padding: 2em;
+
+            & p {
+                font-size: 15px;
+                text-align: center;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region elenco */
+
+    #elenco .nomeDaSection h1 {
+        padding-top: 5%;
+        font-size: 8em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 380px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+    #regras {
+        overflow: hidden;
+
+        & .rulescontainer {
+            width: 100vw;
+            height: 100vh;
+            background: var(--color-base-1);
+
+            & h1 {
+                font-family: bevan;
+                font-size: 6em;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                position: absolute;
+                padding-top: 3%;
+                color: var(--color-white);
+            }
+
+            & .ruleslist {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+                padding-top: 15%;
+                position: absolute;
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 25px;
+                    height: 50%;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 1.5em;
+                    padding: 1em;
+
+                    & span {
+                        font-size: .7em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region comentarios */
+
+    #gallery {
+        border-top: 5px solid var(--color-restricted);
+        position: relative;
+        padding-top: 10em;
+        overflow: hidden;
+
+        & .title {
+
+            & h1 {
+                font-family: bevan;
+                font-size: 8em;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                color: var(--color-white);
+                transform: translateY(-50px);
+            }
+        }
+
+        & .filterGroup {
+            padding-top: 10em;
+            margin-top: 10em;
+        }
+
+        & .galleryContainer {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: 22% 22% 22% 22%;
+            column-gap: .3em;
+            padding: 6em 12em;
+            margin-left: 11em;
+
+
+            & .galleryInner {
+                position: relative;
+                width: 20%;
+                padding: .5em;
+
+                & img {
+                    width: 100%;
+                    height: auto;
+                    transition: .3s;
+                    border-radius: 25px;
+                    border: 2px solid var(--color-white);
+                    transition: all .5s;
+                }
+
+                & img:hover {
+                    filter: saturate(1);
+                    border: 2px solid var(--color-black);
+                    transition: all .5s;
+                }
+
+            }
+        }
+
+        & .filter {
+            position: absolute;
+            z-index: 100;
+            left: -50%;
+            right: -50%;
+            top: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            & li {
+                padding: 1em;
+                cursor: pointer;
+                letter-spacing: .2em;
+                background-color: var(--color-white);
+                margin-left: .5em;
+                border-radius: 25px;
+                transition: all .5s;
+
+                /* & h4{
+                display: flex;
+            } */
+
+
+            }
+
+            & li:hover {
+                background: var(--color-white);
+                border-radius: 25px;
+                font-size: small;
+                transition: all .5s;
+            }
+
+            & li.active {
+                background: var(--color-white);
+                border-radius: 25px;
+                border: 1px solid var(--color-detail);
+
+
+
+                & h4 {
+                    color: var(--color-detail);
+                }
+            }
+        }
+
+    }
+
+    /* #endregion */
+
+    /* #region citações */
+
+    #citações {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+
+        & .nomeDaSection {
+            & h1 {
+                font-family: bevan;
+                font-size: 8em;
+                display: flex;
+                justify-content: center;
+                padding-top: 3%;
+                color: var(--color-white);
+            }
+        }
+
+        & .carrossel {
+            margin: 2em 2em 5em 2em;
+            border-radius: 5%;
+            /* max-width: 900px; */
+            width: 70vw;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            background-color: aliceblue;
+
+            & i {
+                font-size: 90px;
+                color: #dfdfdf;
+                margin-bottom: 40px;
+            }
+
+            & p.citação {
+                font-weight: 300;
+                margin-bottom: 1em;
+                font-size: 2em;
+            }
+
+            & .slide {
+                padding: 3em 5em;
+                cursor: grab;
+
+                & .pessoa {
+                    display: flex;
+                    align-items: center;
+
+                    & h2.nome-pessoa {
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & .slide:active {
+                cursor: grabbing;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+
+    #contact {
+        height: auto;
+        /* Permite que a altura se ajuste automaticamente */
+        padding: 2em 0 20%;
+    }
+
+    & .contactcontainer {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr 1fr;
+        align-items: center;
+        align-content: center;
+        padding: 1em;
+        gap: 1em;
+        border-radius: 25px;
+        backdrop-filter: blur(1em);
+        -webkit-backdrop-filter: blur(1em);
+
+        & .mapcontainer iframe {
+            width: 100%;
+            height: 45em;
+            border-radius: 25px;
+        }
+
+        & .contactdetails {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+            padding: 2em 2em 2em;
+            height: 50em;
+            align-content: center;
+            border-left: 1px solid var(--color-white);
+            border-right: 1px solid var(--color-white);
+        }
+
+        & .contactform {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: var(--color-white);
+            align-items: center;
+            width: 20em;
+            border-radius: 10px;
+
+            & h2:first-child {
+                font-size: 1.5em;
+            }
+
+            & h2:nth-child(2) {
+                font-size: 2em;
+                margin-bottom: 1em;
+                font-family: bevan;
+                font-size: 1.5em;
+            }
+
+            & form {
+                display: flex;
+                flex-direction: column;
+
+                & label {
+                    font-family: bevan;
+                }
+
+                & #nome,
+                #email,
+                #mensagem {
+                    margin-bottom: 3em;
+                }
+
+                .agreement {
+                    text-align: center;
+                    padding-bottom: 1em;
+                }
+
+                & button {
+                    padding: 1em;
+                    background-color: var(--color-base-5);
+                    border: 1px solid var(--color-white);
+                    border-radius: 10px;
+                    font-family: bevan;
+                    color: var(--color-white);
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        position: relative;
+        width: 100%;
+        background: var(--color-footer);
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & .footerContainer {
+
+            & .socialIcons,
+            .menu {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                flex-wrap: wrap;
+            }
+
+            .socialIconItem,
+            .menuItem {
+                list-style: none;
+            }
+
+            .socialIconLink {
+                font-size: 2rem;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+            }
+
+            .socialIconLink:hover {
+                transform: translateY(-10px);
+            }
+
+            .menuLink {
+                font-size: 1.2rem;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+                text-decoration: none;
+                opacity: 0.75;
+                font-weight: 300;
+            }
+
+            .menuLink:hover {
+                opacity: 1;
+            }
+
+            p {
+                color: #fff;
+                margin: 15px 0 20px 0;
+                font-size: 1.2rem;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+            }
+
+            .wave {
+                position: absolute;
+                top: -100px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background: url('../img/waveFooterLightMode.png');
+                background-size: 1000px 100px;
+            }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+        }
+    }
+
+    @keyframes animateWaves {
+        0% {
+            background-position-x: 1000px;
+        }
+
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            background-position-x: -1000px;
+        }
+
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+
+    .darkMode footer {
+        .wave {
+            background-image: url(../img/waveFooterDarkMode.png);
+        }
+    }
+
+    /* #endregion */
+}
+
+@media (min-width: 1920px) {
+
+    /* #region global */
+    span {
+        color: var(--color-restricted);
+        padding: .8em;
+        transform: scale(1.2);
+        text-decoration: underline;
+        font-family: bevan;
+    }
+
+    /* #endregion */
+
+    /* #region header */
+
+    header {
+        position: relative;
+
+        & nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            /* Garante que o header esteja acima de outros elementos */
+
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 1em;
+
+                & .logo {
+
+                    & img {
+                        height: 5em;
+                        cursor: pointer;
+                    }
+                }
+
+                & .navbar {
+                    display: flex;
+                    align-items: center;
+                    padding: 0 2em;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 65vw;
+                    height: 4em;
+                    justify-content: space-between;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    /* Fundo branco com opacidade para efeito de blur visível */
+                    backdrop-filter: blur(1em);
+                    /* Aplica o efeito de desfoque */
+                    -webkit-backdrop-filter: blur(1em);
+                    /* aumenta a compatibilidade do efeito em outros navegadores */
+
+
+                    & ul {
+                        display: flex;
+                        align-items: center;
+
+                        & li {
+                            margin: 0 3em;
+                        }
+                    }
+
+                    a {
+                        color: var(--color-white);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: var(--color-restricted);
+                        font-size: 1.3em;
+                        transition: all .5s;
+                    }
+
+
+                    #btnmode {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.3em;
+                        color: var(--color-white);
+                        transition: all 0.3s;
+                    }
+
+                    #btnmode:hover {
+                        color: var(--color-base-1);
+                        font-size: 1.5em;
+                        transition: all .5s;
+                    }
+                }
+
+                & .navbarmobile {
+                    position: fixed;
+                    display: none;
+                    align-items: center;
+                    padding: 0 2em;
+                    border-radius: 35px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    width: 40vw;
+                    height: 4em;
+                    justify-content: space-between;
+                    background-color: rgba(255, 255, 255, 0.05);
+                    /* Fundo branco com opacidade para efeito de blur visível */
+                    backdrop-filter: blur(1em);
+                    /* Aplica o efeito de desfoque */
+                    -webkit-backdrop-filter: blur(1em);
+                    /* aumenta a compatibilidade do efeito em outros navegadores */
+                    right: 0%;
+
+                    & ul {
+                        display: flex;
+                        align-items: center;
+
+                        & li {
+                            margin: 0 3em;
+                            font-size: 1.1em;
+                        }
+                    }
+
+                    a {
+                        color: var(--color-white);
+                        text-transform: uppercase;
+                        font-weight: 400;
+                    }
+
+                    a:hover {
+                        color: var(--color-base-1);
+                        font-size: 1.3em;
+                        transition: all .5s;
+                    }
+
+
+                    #btnmode {
+                        background: none;
+                        border: none;
+                        cursor: pointer;
+                        font-size: 1.3em;
+                        color: var(--color-white);
+                        transition: all 0.3s;
+                    }
+
+                    #btnmode:hover {
+                        color: var(--color-white);
+                        font-size: 1.5em;
+                        transition: all .5s;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    /* #endregion */
+
+    /* #region home */
+    #home {
+        #about .aboutcontainer {
+            width: 100%;
+            right: 0%;
+    
+            & img {
+                display: none;
+            }
+    
+            & .aboutdetails {
+                padding: 2em;
+    
+                & p {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+
+
+        & .homecontainer {
+            width: 100%;
+
+            & #title {
+                padding: 1em 2%;
+                color: var(--color-restricted);
+                font-family: bevan;
+                font-size: 10em;
+                position: absolute;
+            }
+
+            & #subtitle {
+                font-size: 5em;
+                padding: 4.5em 2%;
+                position: absolute;
+                color: var(--color-white);
+            }
+        }
+    }
+
+    .darkMode #home {
+        background-image: url(../img/background_homepage_dark.webp);
+    }
+
+
+    /* #endregion */
+
+    /* #region about */
+    #about {
+
+        & .aboutcontainer {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 40vw;
+            align-items: end;
+            position: absolute;
+            right: 2%;
+            justify-content: center;
+
+            & img {
+                height: 20em;
+                width: 20em;
+            }
+
+            & .aboutdetails {
+                padding: 3em;
+                text-align: end;
+
+                & p {
+                    padding: 1em;
+                    color: var(--color-white)
+                }
+            }
+        }
+    }
+    
+
+    /* #endregion */
+
+    /* #region elenco */
+
+    #elenco .nomeDaSection h1 {
+        padding-top: 5%;
+        font-size: 8em;
+        text-transform: uppercase;
+        /* Reduz o tamanho do título */
+    }
+
+    #elenco .carrossel-elenco-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        /* Centraliza o carrossel na tela */
+        align-items: center;
+        /* Centraliza verticalmente */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores {
+        padding-top: 5%;
+        display: flex;
+        justify-content: center;
+        /* Centraliza a imagem dentro do carrossel */
+    }
+
+    #elenco .carrossel-elenco-container .carrossel-elenco .atores img {
+        height: 500px;
+        /* Ajusta a altura da imagem */
+        width: 500px;
+        /* Ajusta a largura da imagem */
+    }
+
+    #elenco .atores .nome-ator {
+        font-size: 0.9em;
+        /* Ajusta o tamanho do nome do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    #elenco .atores .papel-ator {
+        font-size: 0.7em;
+        /* Ajusta o tamanho do papel do ator */
+        padding: 25px;
+        text-align: start;
+    }
+
+    /* #endregion */
+
+    /* #region regras */
+    #regras {
+        overflow: hidden;
+
+        & .rulescontainer {
+            width: 100vw;
+            height: 100vh;
+            background: var(--color-base-1);
+
+            & h1 {
+                font-family: bevan;
+                font-size: 8em;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                position: absolute;
+                padding-top: 3%;
+                color: var(--color-white);
+            }
+
+            & .ruleslist {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+                padding-top: 15%;
+                position: absolute;
+
+                & li {
+                    background-color: var(--color-white);
+                    border-radius: 25px;
+                    height: 50%;
+                    width: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    font-size: 1.5em;
+                    padding: 1em;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region comentarios */
+
+    #gallery {
+        border-top: 5px solid var(--color-restricted);
+        position: relative;
+        padding-top: 10em;
+        overflow: hidden;
+
+        & .title {
+            & h1 {
+                font-family: Bevan, sans-serif;
+                font-size: 3em;
+                /* Reduzi o tamanho da fonte */
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                color: var(--color-white);
+                transform: translateY(-20px);
+                /* Ajustei a transformação */
+            }
+        }
+
+        & .filterGroup {
+            padding-top: 2em;
+            margin-top: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            list-style: none;
+        }
+
+        & .filterGroup li {
+            padding: 0.5em;
+            cursor: pointer;
+            letter-spacing: .1em;
+            background-color: var(--color-white);
+            margin: 0 0.3em;
+            border-radius: 15px;
+            transition: all .5s;
+            font-size: 1em;
+            /* Ajustei o tamanho da fonte */
+        }
+
+        & .galleryContainer {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* Alterei para 2 colunas */
+            column-gap: .5em;
+            padding: 2em;
+            margin-left: 0;
+            /* Removi o deslocamento à esquerda */
+        }
+
+        & .galleryInner {
+            position: relative;
+            width: 100%;
+            /* Corrigi a largura para 100% */
+            padding: .5em;
+            box-sizing: border-box;
+
+            & img {
+                width: 100%;
+                height: auto;
+                transition: .3s;
+                border-radius: 15px;
+                /* Reduzi o raio das bordas */
+                border: 2px solid var(--color-white);
+            }
+
+            & img:hover {
+                filter: saturate(1);
+                border: 2px solid var(--color-black);
+                transition: all .5s;
+            }
+        }
+
+
+        & li:hover {
+            background: var(--color-white);
+            border-radius: 25px;
+            font-size: small;
+            transition: all .5s;
+        }
+
+        & li.active {
+            background: var(--color-white);
+            border-radius: 25px;
+            border: 1px solid var(--color-detail);
+
+
+
+            & h4 {
+                color: var(--color-detail);
+            }
+        }
+    }
+
+
+    /* #endregion */
+
+    /* #region citações */
+
+    #citações {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+
+        & .nomeDaSection {
+            & h1 {
+                font-family: bevan;
+                font-size: 8em;
+                display: flex;
+                justify-content: center;
+                padding-top: 3%;
+                color: var(--color-white);
+            }
+        }
+
+        & .carrossel {
+            margin: 2em 2em 5em 2em;
+            border-radius: 5%;
+            /* max-width: 900px; */
+            width: 70vw;
+            height: auto;
+            position: relative;
+            overflow: hidden;
+            background-color: aliceblue;
+
+            & i {
+                font-size: 90px;
+                color: #dfdfdf;
+                margin-bottom: 40px;
+            }
+
+            & p.citação {
+                font-weight: 300;
+                margin-bottom: 1em;
+                font-size: 2em;
+            }
+
+            & .slide {
+                padding: 3em 5em;
+                cursor: grab;
+
+                & .pessoa {
+                    display: flex;
+                    align-items: center;
+
+                    & h2.nome-pessoa {
+                        font-size: 2em;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            & .slide:active {
+                cursor: grabbing;
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region contact */
+
+    #contact {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        /* border-bottom: 5px solid var(--color-restricted); */
+    }
+
+    & .contactcontainer {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 3fr 1fr 1fr;
+        align-items: center;
+        align-content: center;
+        padding: 1em;
+        gap: 1em;
+        border-radius: 25px;
+        backdrop-filter: blur(1em);
+        -webkit-backdrop-filter: blur(1em);
+        padding-bottom: 5em;
+
+        & .mapcontainer iframe {
+            width: 100%;
+            height: 45em;
+            border-radius: 25px;
+        }
+
+        & .contactdetails {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            color: white;
+            padding: 2em 2em 2em;
+            height: 50em;
+            align-content: center;
+            border-left: 1px solid var(--color-white);
+            border-right: 1px solid var(--color-white);
+
+            & .addresslist {
+                & li {
+                    padding: 2em 0em;
+                }
+            }
+        }
+
+        & .contactform {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background: var(--color-white);
+            align-items: center;
+            width: 20em;
+            border-radius: 10px;
+
+            & h2:first-child {
+                font-size: 1.5em;
+            }
+
+            & h2:nth-child(2) {
+                font-size: 2em;
+                margin-bottom: 1em;
+                font-family: bevan;
+                font-size: 1.5em;
+            }
+
+            & form {
+                display: flex;
+                flex-direction: column;
+
+                & label {
+                    font-family: bevan;
+                }
+
+                & #nome,
+                #email,
+                #mensagem {
+                    margin-bottom: 3em;
+                }
+
+                .agreement {
+                    text-align: center;
+                    padding-bottom: 1em;
+                }
+
+                & button {
+                    padding: 1em;
+                    background-color: var(--color-base-5);
+                    border: 1px solid var(--color-white);
+                    border-radius: 10px;
+                    font-family: bevan;
+                    color: var(--color-white);
+                    font-size: 1.1em;
+                }
+            }
+        }
+    }
+
+    /* #endregion */
+
+    /* #region footer */
+
+    footer {
+        position: relative;
+        width: 100%;
+        background: var(--color-footer);
+        min-height: 100px;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        & .footerContainer {
+
+            & .socialIcons,
+            .menu {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 10px 0;
+                flex-wrap: wrap;
+            }
+
+            .socialIconItem,
+            .menuItem {
+                list-style: none;
+            }
+
+            .socialIconLink {
+                font-size: 2rem;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+            }
+
+            .socialIconLink:hover {
+                transform: translateY(-10px);
+            }
+
+            .menuLink {
+                font-size: 1.2rem;
+                color: #fff;
+                margin: 0 10px;
+                display: inline-block;
+                transition: 0.5s;
+                text-decoration: none;
+                opacity: 0.75;
+                font-weight: 300;
+            }
+
+            .menuLink:hover {
+                opacity: 1;
+            }
+
+            p {
+                color: #fff;
+                margin: 15px 0 20px 0;
+                font-size: 1.2rem;
+                font-weight: 300;
+                display: flex;
+                justify-content: center;
+            }
+
+            .wave {
+                position: absolute;
+                top: -100px;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                background: url('../img/waveFooterLightMode.png');
+                background-size: 1000px 100px;
+            }
+
+            .wave#wave1 {
+                z-index: 1000;
+                opacity: 1;
+                bottom: 0;
+                animation: animateWaves 4s linear infinite;
+            }
+
+            .wave#wave2 {
+                z-index: 999;
+                opacity: 0.5;
+                bottom: 10px;
+                animation: animate 4s linear infinite !important;
+            }
+
+            .wave#wave3 {
+                z-index: 1000;
+                opacity: 0.2;
+                bottom: 15px;
+                animation: animateWaves 3s linear infinite;
+            }
+
+            .wave#wave4 {
+                z-index: 999;
+                opacity: 0.7;
+                bottom: 20px;
+                animation: animate 3s linear infinite;
+            }
+        }
+    }
+
+    @keyframes animateWaves {
+        0% {
+            background-position-x: 1000px;
+        }
+
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+
+    @keyframes animate {
+        0% {
+            background-position-x: -1000px;
+        }
+
+        100% {
+            background-positon-x: 0px;
+        }
+    }
+
+    .darkMode footer {
+        .wave {
+            background-image: url(../img/waveFooterDarkMode.png);
+        }
+    }
+
+    /* #endregion */
+}

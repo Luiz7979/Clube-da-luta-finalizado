@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Site sobre o filme Clube da Luta, incluindo elenco, regras, e citações.">
+    <!-- Fornece uma descrição curta do conteúdo da página para os mecanismos de busca, como Google, Bing, etc. -->
+
+    <meta property="og:title" content="Clube da Luta - Filme">
+    <!-- Faz parte do protocolo Open Graph, que é usado para integrar melhor o site com as redes sociais (como Facebook, LinkedIn, Twitter, etc.). -->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- myStyle-->
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <!-- carrosselStyle -->
+
+    <link rel="stylesheet" href="./css/media.css">
+    <!-- media query -->
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- boxIcons -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" />
+    <!-- lightBox -->
+
+    <link rel="shortcut icon" href="./img/punch_club_favicon.png" type="image/x-icon">
+    <!-- favicon -->
+
+    <title>Fight Club</title>
+</head>
+
+<header>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#home">
+                    <img src="./img/punch_club_icone_tratado.png" alt="Logotipo do Clube da Luta">
+                </a>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#elenco">Elenco</a></li>
+                    <li><a href="#regras">Regras</a></li>
+                    <li><a href="#citações">Citações</a></li>
+                    <li><a href="#contact">Junte-se</a></li>
+                </ul>
+                <button id="btnmode">
+                    <i class='bx bxs-moon'></i>
+                    <i class='bx bxs-sun'></i>
+                </button>
+            </div>
+            <div class="navbarmobile">
+                <ul>
+                    <li><a href="#home"><i class='bx bxs-home-alt-2'></i></a></li>
+                    <li><a href="#about"><i class='bx bx-movie-play'></i></a></li>
+                    <li><a href="#elenco"><i class='bx bx-male-female'></i></a></li>
+                    <li><a href="#regras"><i class='bx bx-book-open'></i></a></li>
+                    <li><a href="#citações"><i class='bx bx-book-bookmark'></i></a></li>
+                    <li><a href="#contact"><i class='bx bx-mail-send'></i></a></li>
+                </ul>
+
+
+            </div>
+    </nav>
+</header>
+<!-- região navbar -->
+
+<main>
+    <section id="home">
+        <div class="homecontainer">
+            <h1 id="title">NARRADOR</h1>
+            <h2 id="subtitle">NIHILISTA</h2>
+        </div>
+    </section>
+    <!-- região titulo da home -->
+
+    <section id="about">
+        <div class="aboutcontainer">
+            <img src="./img/fight clube logo tratado.png" alt="Logotipo do Fight Club" class="about-logo">
+            <div class="aboutdetails">
+                <p><span>1999 | +18 | 2h 19min | Suspense</span></p>
+                <p>"Clube da Luta" segue um homem desiludido que forma um clube secreto de luta com um carismático
+                    estranho, Tyler Durden. À medida que o grupo cresce, ele se torna cada vez mais radical, levando a
+                    consequências chocantes e revelações sobre sua própria identidade.</p>
+                <p><strong><span>Estrelando:</span></strong></p>
+                <p>Brad Pitt, Edward Norton, Helena Bonham Carter</p>
+            </div>
+        </div>
+    </section>
+    <!-- região sobre -->
+
+    <section id="elenco">
+
+        <div class="nomeDaSection">
+            <h1>Elenco</h1>
+        </div>
+
+        <div class="carrossel-elenco-container mySwiper-elenco">
+
+            <div class="carrossel-elenco swiper-wrapper">
+
+                <div class="atores swiper-slide">
+                    <img src="img/elenco/ator1.png" alt="Tyler">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Brad Pitt</h2>
+                        <h2 class="papel-ator">Tyler Durden</h2>
+                    </div>
+                </div>
+                <div class="atores swiper-slide">
+                    <img src="./img/elenco/ator2.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Edward Norton</h2>
+                        <h2 class="papel-ator">Narrador</h2>
+                    </div>
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator3.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Helana Bonham Carter</h2>
+                        <h2 class="papel-ator">Marla Singer</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator4.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Eion Bailey</h2>
+                        <h2 class="papel-ator">Rick</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator5.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Jared Leto</h2>
+                        <h2 class="papel-ator">Angel Face</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator6.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Meat Loaf</h2>
+                        <h2 class="papel-ator">Robert Paulson</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator7.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Zach Grenier</h2>
+                        <h2 class="papel-ator">Richard Chesler</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator8.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">David Andrews</h2>
+                        <h2 class="papel-ator">Thomas</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator9.jpg" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Richmond Arquette</h2>
+                        <h2 class="papel-ator">Interno</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator10.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Rachel Singer</h2>
+                        <h2 class="papel-ator">Chloe</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator11.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">George Maguire</h2>
+                        <h2 class="papel-ator">Grupo de Suporte</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator12.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Christina Cabot</h2>
+                        <h2 class="papel-ator">Líder de Grupo #2</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator13.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Eugenie Bondurant</h2>
+                        <h2 class="papel-ator">Mulher Chorando</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator14.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Thom Gossom</h2>
+                        <h2 class="papel-ator">Detetive Stem</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator15.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">David Lee Smith</h2>
+                        <h2 class="papel-ator">Walter</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator16.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Ezra Buzzington</h2>
+                        <h2 class="papel-ator">Inspetor Dent</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator17.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Pat McNamara</h2>
+                        <h2 class="papel-ator">Comissário Jacobs</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator18.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Lauren Sánchez</h2>
+                        <h2 class="papel-ator">Repórter do Canal 4</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator19.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Edward Kowalczyk</h2>
+                        <h2 class="papel-ator">Garçom do Cliftons's</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator20.png" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Matt Winston</h2>
+                        <h2 class="papel-ator">Estudante do Seminário</h2>
+                    </div>
+
+                </div>
+                <div class="atores swiper-slide">
+
+                    <img src="./img/elenco/ator21.webp" alt="">
+                    <div class="info-ator">
+                        <h2 class="nome-ator">Holt McCallany</h2>
+                        <h2 class="papel-ator">O Mecânico</h2>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="swiper-pagination-elenco"></div> -->
+
+        </div>
+
+    </section>
+    <!-- região elenco -->
+
+    <section id="regras">
+        <div class="rulescontainer">
+            <h1>REGRAS</h1>
+            <ul class="ruleslist">
+                <li>- Você não fala sobre o clube da luta.</li>
+                <li>- Você <span>NÃO </span>fala sobre o clube da luta.</li>
+                <li>- Se alguém gritar "pare", enfraquecer ou desmaiar, a luta está encerrada.</li>
+                <li>- Somente duas pessoas por luta.</li>
+                <li>- Uma luta de cada vez.</li>
+                <li>- Sem camisas, sem sapatos.</li>
+                <li>- As lutas vão até o fim.</li>
+                <li>- Se esta é a sua primeira noite no Clube da Luta, você tem que lutar.</li>
+            </ul>
+        </div>
+    </section>
+    <!-- região regras -->
+
+    <section id="citações">
+
+        <div class="nomeDaSection">
+            <h1>CITAÇÕES</h1>
+        </div>
+
+        <div class="carrossel mySwiper">
+
+            <div class="carrossel-container swiper-wrapper">
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Somos os filhos do meio da história, cara. Sem propósito ou lugar. Não temos uma Grande
+                        Guerra.
+                        Não
+                        temos uma Grande Depressão. Nossa Grande Guerra é uma guerra espiritual... nossa Grande
+                        Depressão
+                        são nossas vidas.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Somos consumidores. Somos os subprodutos de uma obsessão por estilo de vida.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Narrador</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Eu digo, nunca seja completo. Eu digo, pare de ser perfeito. Eu digo, vamos evoluir. Deixe
+                        as
+                        coisas acontecerem como devem acontecer.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Você não é o seu trabalho. Você não é o quanto de dinheiro você tem no banco. Você não é o
+                        carro
+                        que dirige. Você não é o conteúdo da sua carteira.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        É só depois de perder tudo que somos livres para fazer qualquer coisa.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        As coisas que você possui acabam possuindo você.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Somos uma geração de homens criados por mulheres. Eu me pergunto se outra mulher é realmente
+                        a
+                        resposta de que precisamos.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Compramos coisas que não precisamos com dinheiro que não temos para impressionar pessoas de
+                        quem não gostamos.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        Esta é a sua vida, e ela está acabando um minuto de cada vez.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Narrador</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide swiper-slide">
+
+                    <i class='bx bxs-quote-left'></i>
+
+                    <p class="citação">
+                        A publicidade nos faz correr atrás de carros e roupas, trabalhando em empregos que odiamos
+                        para
+                        comprar porcarias de que não precisamos.
+                    </p>
+
+                    <div class="pessoa">
+                        <div class="info-pessoa">
+                            <h2 class="nome-pessoa">-Tyler Durden</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- região citações -->
+
+    <section id="contact">
+        <div class="contactcontainer">
+            <div class="mapcontainer">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117080.94325468851!2d-46.44416857917016!3d-23.504451238598932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef45ca2d9403d%3A0xade985b1f8342661!2sClube%20da%20Luta!5e0!3m2!1spt-BR!2sbr!4v1723914215084!5m2!1spt-BR!2sbr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="contactdetails">
+                <ul class="addresslist">
+                    <li>
+                        <h4><i class='bx bxs-building-house'></i> Endereço</h4>
+                        <p>A108 Adam Street, New York, NY 535022</p>
+                    </li>
+                    <li>
+                        <h4><i class='bx bxs-phone-call'></i> Telefone</h4>
+                        <p>+66 5589 55488 666</p>
+                    </li>
+                    <li>
+                        <h4><i class='bx bxs-envelope'></i> Email</h4>
+                        <p>contact@darksky.com</p>
+                    </li>
+                    <li>
+                        <h4><i class='bx bxs-door-open'></i> Horário de Funcionamento</h4>
+                        <p>Seg-Sáb: 11AM - 23PM; Domingo: Fechado</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactform">
+                <h2>Junte-se ao </h2>
+                <h2>Clube da Luta</h2>
+                <form action="https://api.staticforms.xyz/submit" method="post">
+                    <input type="hidden" name="accessKey" value="ae1a6851-21e0-4df8-99f3-8d5d880273a3">
+
+                    <label for="nome" class="sr-only">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="off" required>
+
+                    <label for="email" class="sr-only">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" autocomplete="off"
+                        required>
+
+
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
+
+                    <div class="agreement">
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement">
+                            Eu declaro que concordo com as regras do clube da luta e caso quebre as regras estou
+                            disposto a sofrer as consequências.
+                        </label>
+                    </div>
+
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="footerContainer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="socialIcons">
+                <li class="socialIconItem"><a
+                        href="https://www.reddit.com/r/filmeseseries/comments/11da1co/clube_da_luta/" target="_blank">
+                        <i class='bx bxl-reddit'></i>
+                    </a></li>
+                <li class="socialIconItem"><a
+                        href="https://www.facebook.com/groups/660161137428967/" target="_blank">
+                        <i class='bx bxl-facebook-circle'></i>
+                    </a></li>
+                <li class="socialIconItem"><a
+                        href="https://www.instagram.com/clubedaluta/" target="_blank">
+                        <i class='bx bxl-instagram-alt'></i>
+                    </a></li>
+            </ul>
+
+            <ul class="menu">
+                <li class="menuItem"><a class="menuLink" href="#home">Início</a></li>
+                <li class="menuItem"><a class="menuLink" href="#about">Sobre</a></li>
+                <li class="menuItem"><a class="menuLink" href="#elenco">Elenco</a></li>
+                <li class="menuItem"><a class="menuLink" href="#regras">Regras</a></li>
+                <li class="menuItem"><a class="menuLink" href="#gallery">Comentários</a></li>
+                <li class="menuItem"><a class="menuLink" href="#citações">Citações</a></li>
+                <li class="menuItem"><a class="menuLink" href="#contact">Junte-se</a></li>
+            </ul>
+
+            <p>&copy;2024 Punch Club | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<!-- jQueryMask -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<!-- lightBox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<!-- isotope -->
+
+<script src='./js/swiper-bundle.min.js'></script>
+
+<script src="./js/carrosselElenco.js"></script>
+
+<script src="./js/carroselCitacoes.js"></script>
+
+<script src="./js/dark-mode.js"></script>
+
+</body>
+
+</html>
